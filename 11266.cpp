@@ -22,7 +22,7 @@ int dfs(int from, bool is_root)
 			child++;
 			subtree = dfs(to, false);
 
-			if (!is_root && subtree >= discovered[from])
+			if (!is_root && subtree >= discovered[from]) 
 				is_cut[from] = true;
 
 			ret = ret < subtree ? ret : subtree;
